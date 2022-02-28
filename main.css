@@ -1,0 +1,145 @@
+/* We don't need to use this font, but I'm going to leave this in here for now
+so that we have the syntax if we want to import a different font (I always forget) */
+@font-face {
+    font-family: 'don_graffitiregular';
+    src: url('don_graffiti/dongraffiti-webfont.woff2') format('woff2'),
+         url('don_graffiti/dongraffiti-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI';
+  padding: 10px;
+  background-image: url('media_f/site-background.jpg');
+  color: black;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background:#ddd;
+  opacity: 97%;
+  color: black;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-family: 'don_graffitiregular', 'Segoe UI';
+  color: #E5851F
+  text-shadow: 2px 2px black;
+}
+
+h3 {
+  font-family: 'don_graffitiregular', 'Segoe UI';
+  font-size: 2rem;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'don_graffitiregular', 'Segoe UI';
+  font-size: 1.3em;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: inherit;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ddd;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li{
+  font-size: 1.3rem;
+}
+
+.card {
+  opacity: 99%;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: right;
+  background: #ddd;
+  opacity: 97%;
+  margin-top: 20px;
+  font-family: 'don_graffitiregular', 'Segoe UI';
+  font-size: 1.3em;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+}
