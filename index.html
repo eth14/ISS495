@@ -21,30 +21,45 @@
     button {
       cursor: pointer;
       background-size: 100% 100%;
-      font-family: 'don_graffitiregular', 'Segoe UI';
+      font-family: 'Trebuchet MS', sans-serif;
       font-size: 3em;
       width: 92%;
       height: 250px;
       display: block;
       margin: auto;
       color: white;
-      text-shadow: 2px 3px black;
+      /*text-shadow: 2px 3px black; */
+      text-shadow: 0 0 20px rgba(0,0,0,1.0);
     }
 
-    #graffiti-but {
-      background: url('media_f/thumbs/graf.jpg') no-repeat;
+    .header h1 {
+      font-size: 80px;
+      margin-bottom: -10px;
     }
 
-    #digital-but {
-      background: url('media_f/thumbs/digi.jpg') no-repeat;
+    #debunking-but {
+      background: url('media/uncgame.jpg') no-repeat;
+      background-size: cover;
     }
 
-    #personal-but {
-      background: url('media_f/thumbs/swirl.jpg') no-repeat;
+    #firstyr-but {
+      background: url('media/candidBaldwinquad.jpg') no-repeat;
+      background-size: cover;
     }
 
-    #comics-but {
-      background: url('media_f/thumbs/trump.jpg') no-repeat;
+    #academic-but {
+      background: url('media/lawlibrary.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    #balancing-but {
+      background: url('media/nasheryoga.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    #after-but {
+      background: url('media/2018commencement.jpg') no-repeat;
+      background-size: cover;
     }
   </style>
 
@@ -54,20 +69,21 @@
 
   <div class="header">
     <h1>Project Title </h1>
+    <h2>Project Subtitle </h2>
   </div>
 
   <main>
     <div class="buttons">
       <button id="debunking-but" onclick="location.href='debunking.html'" type="button">Debunking Duke Culture</button>
       <button id="firstyr-but" onclick="location.href='firstyr.html'" type="button">The First Year Experience</button>
-      <button id="pacademic-but" onclick="location.href='academic.html'" type="button">Academics / Major Selection</button>
+      <button id="academic-but" onclick="location.href='academic.html'" type="button">Academics / Major Selection</button>
       <button id="balancing-but" onclick="location.href='balancing.html'" type="button">Balancing Life at Duke</button>
       <button id="after-but" onclick="location.href='after.html'" type="button">Life After Duke</button>
       </div>
   </main>
 
-  <div class="footer" style="background-color: #ddd;">
-    <p> <a href="https://iss.duke.edu/undergraduate-certificate"> Information Science + Studies </a></p>
+  <div class="footer">
+    <p> <a class="ISSlink" href="https://iss.duke.edu/undergraduate-certificate"> Information Science + Studies </a></p>
   </div>
 
 </body>
